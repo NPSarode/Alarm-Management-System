@@ -6,7 +6,7 @@ A web application for efficiently managing and monitoring alarms in real-time. D
 
 ## 🌐 Live Demo
 
-> _[Add your deployed app link here if available]_
+> _[[Add your deployed app link here if available]_](https://alarmsystem-54om.onrender.com/)
 
 ---
 
