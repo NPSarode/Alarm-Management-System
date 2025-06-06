@@ -1,0 +1,99 @@
+.machineCard {
+  min-height: 40vh;
+}
+
+.machineCard:hover #machineImage img{
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 16px 30px #0004;
+}
+
+#machineImage img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -40%);
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 3px 6px 10px #0004;
+  transition: .3s ease-in-out;
+  border:1px solid #fff;
+}
+
+#machine-body {
+  max-height: 85vh;
+  /* max-height: calc(100vh - 68.5px); */
+  overflow: auto;
+}
+
+#machineData {
+  position: absolute;
+  bottom: 0;
+}
+
+#machineButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(0%, 50%);
+}
+
+.activeAlarms {
+  transition: 1s ease-in-out;
+}
+
+.activeAlarms:hover {
+  background: linear-gradient(to left, #FF204E44, #A0153E11, #FF204E44);
+}
+
+.alarmIcon {
+  animation: jump-shaking 1s infinite linear;
+}
+
+@keyframes jump-shaking {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateY(-4px)
+  }
+
+  35% {
+    transform: translateY(-4px) rotate(17deg)
+  }
+
+  55% {
+    transform: translateY(-4px) rotate(-17deg)
+  }
+
+  65% {
+    transform: translateY(-4px) rotate(17deg)
+  }
+
+  75% {
+    transform: translateY(-4px) rotate(-17deg)
+  }
+
+  100% {
+    transform: translateY(0) rotate(0)
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #FF204E, #A0153E88); 
+  border-radius: 20px;
+}
